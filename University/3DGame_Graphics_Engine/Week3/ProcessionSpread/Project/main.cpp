@@ -17,7 +17,12 @@ int main()
 	tank->addChild(head);
 
 	tank->translate(5.0f, 0.0f, 0.0f);
-		
+	
+	head->translate(0.0f, 10.0f, 0.0f);
 
+	wheel->translate(-5.0f, 0.0f, 0.0f);
+	
+	tank->translate(-5.0f, 0.0f, 0.0f);
+		
 	tank->list();
 }
