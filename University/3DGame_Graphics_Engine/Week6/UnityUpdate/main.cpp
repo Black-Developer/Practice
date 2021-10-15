@@ -10,7 +10,7 @@ using namespace std;
 
 void ObjectUpdate();
 void ObjectFixedUpdate();
-vector<Object> objectList;
+vector<Object*> objectList;
 
 void main()
 {
@@ -22,9 +22,9 @@ void main()
 	Monster* monster = new Monster("Monster");
 	Object* timer = new Object("Timer");
 	// Add Object
-	objectList.push_back(*player);
-	objectList.push_back(*monster);
-	objectList.push_back(*timer);
+	objectList.push_back(player);
+	objectList.push_back(monster);
+	objectList.push_back(timer);
 
 	while (true)
 	{
@@ -39,6 +39,9 @@ void main()
 			std::cout.unsetf(ios::fixed);
 		}
 	}
+	delete(player);
+	delete(monster);
+	delete(timer);
 	exit(0);
 }
 
@@ -46,14 +49,13 @@ void ObjectUpdate()
 {
 	for (int i = 0; i < objectList.size(); i++)
 	{
-		objectList.at(i).Update();
+		objectList.at(i)->Update();
 	}
 }
 void ObjectFixedUpdate()
 {
 	for (int i = 0; i < objectList.size(); i++)
 	{
-		objectList.at(i).FixedUpdate();
+		objectList.at(i)->FixedUpdate();
 	}
-	system("cls");
 }
