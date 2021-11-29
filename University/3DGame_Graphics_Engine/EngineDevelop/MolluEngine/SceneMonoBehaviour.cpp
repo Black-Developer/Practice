@@ -5,10 +5,10 @@
 
 void SceneMonoBehaviour::LoadScene()
 {
-	SceneManager::getInstance().SetScene(dynamic_cast<State*>(this));
+	SceneManager::getInstance().LoadScene(dynamic_cast<State*>(this));
 }
 
-void SceneMonoBehaviour::Execute()
+void SceneMonoBehaviour::Enter()
 {
 
 	//Maybe i need Awake()
@@ -17,8 +17,10 @@ void SceneMonoBehaviour::Execute()
 	{
 		gameObjects.at(i)->Start();
 	}
-	while (true)
-	{
+}
+
+void SceneMonoBehaviour::Execute()
+{
 		if (Time::getInstance().IsFixedFrame())
 		{
 			for (unsigned int i = 0; i < gameObjects.size(); i++)
@@ -42,5 +44,4 @@ void SceneMonoBehaviour::Execute()
 		{
 			gameObjects.at(i)->Render();
 		}
-	}
 }

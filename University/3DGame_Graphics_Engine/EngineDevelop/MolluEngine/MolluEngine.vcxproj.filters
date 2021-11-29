@@ -75,11 +75,23 @@
     <ClCompile Include="SceneMonoBehaviour.cpp">
       <Filter>소스 파일\MolluEngine\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="StateMachine.cpp">
-      <Filter>소스 파일\MolluEngine\BaiscSystem</Filter>
-    </ClCompile>
     <ClCompile Include="OpenGLRenderer.cpp">
       <Filter>소스 파일\MolluEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>소스 파일\MolluEngine\BaiscSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DXRenderer.cpp">
+      <Filter>소스 파일\MolluEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>소스 파일\MolluEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxRenderer.cpp">
+      <Filter>소스 파일\MolluEngine\Component</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,5 +134,20 @@
     <ClInclude Include="StateMachine.h">
       <Filter>헤더 파일\MolluEngine\BasicSystem</Filter>
     </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>헤더 파일\MolluEngine\BasicSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>헤더 파일\MolluEngine\BasicSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MonoBehaviour.h">
+      <Filter>헤더 파일\MolluEngine\BasicSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxRenderer.h">
+      <Filter>헤더 파일\MolluEngine\Component</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

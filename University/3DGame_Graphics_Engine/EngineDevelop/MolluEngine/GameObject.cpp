@@ -4,33 +4,32 @@
 
 void GameObject::Start()
 {
-	if (components != NULL)
+	if (!components.empty())
 	{
-		for (int i = 0; i < components->size(); i++)
+		for (int i = 0; i < components.size(); i++)
 		{
-			components->at(i).Start();
+			components.at(i)->Start();
 		}
 	}
 }
 void GameObject::Update()
 {
-	if (components != NULL)
+	if (!components.empty())
 	{
-		for (int i = 0; i < components->size(); i++)
+		for (int i = 0; i < components.size(); i++)
 		{
-			std::cout << "GameObject Update" << std::endl;
-			components->at(i).Update();
+			components.at(i)->Update();
 		}
 	}
 }
 
 void GameObject::Render()
 {
-	if (components != NULL)
+	if (!components.empty())
 	{
-		for (int i = 0; i < components->size(); i++)
+		for (int i = 0; i < components.size(); i++)
 		{
-			components->at(i).Render();
+			components.at(i)->Render();
 		}
 	}
 }

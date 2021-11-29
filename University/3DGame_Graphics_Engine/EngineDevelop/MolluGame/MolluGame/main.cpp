@@ -12,12 +12,12 @@ int main(int argc, char** argv)
 	cout << "Mol?lu" << endl;
 
 	IRenderer* Renderer = new GLRenderer();
-	MolluEngineManager::getInstance();
 
 	MolluEngineManager::getInstance().Init(Renderer, argc, argv);
 	MolluEngineManager::getInstance().InitCamera(Renderer);
 
 	GameObject* player = new GameObject();
+
 
 	Scene* newScene = new Scene("newScene",0);
 	
@@ -25,6 +25,9 @@ int main(int argc, char** argv)
 	newScene->AddGameObject(player);
 	SceneManager::getInstance().InitScene(newScene);
 	SceneManager::getInstance().SetScene(newScene);
+
+	newScene->LoadScene();
+	newScene->LoadScene();
 
 	MolluEngineManager::getInstance().Loop(Renderer);
 

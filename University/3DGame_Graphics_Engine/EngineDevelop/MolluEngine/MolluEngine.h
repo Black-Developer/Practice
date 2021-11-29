@@ -6,5 +6,6 @@
 #include "Scene.h"
 #include "SceneManager.h"
 #include "Time.h"
+#include "MonoBehaviour.h"
 
 #endif // !__MOLLUENGINE_H__

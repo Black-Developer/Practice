@@ -16,11 +16,10 @@ public:
 	int index;
 	std::string name;
 	void LoadScene();
-protected:
-	virtual void Enter() {}
-	virtual void Execute();
-	virtual void Exit() {}
 private:
+	void Enter();
+	void Execute();
+	void Exit() {}
 };
 
 #endif // !__SCENESTATE_H__

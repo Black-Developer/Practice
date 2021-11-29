@@ -12,7 +12,7 @@ class SceneManager
 private:
 	SceneManager()
 	{
-		m_pStateMachine = new StateMachine;
+		m_pStateMachine = new StateMachine<State>;
 		m_pStateMachine->SetCurrentState(nullptr);
 		m_pStateMachine->SetGlobalState(nullptr);
 	}
@@ -22,8 +22,9 @@ private:
 
 
 	std::map<Scene*, int> scene_Array;
-	
-	StateMachine *m_pStateMachine;
+	Scene* currentScene;
+	StateMachine<State> *m_pStateMachine;
+	int sceneIndex;
 public:
 	static SceneManager& getInstance()
 	{
@@ -32,7 +33,13 @@ public:
 	}
 	void InitScene(State*);
 	void AddScene(Scene* scene);
-	void SetScene(State*);
+	void LoadScene(Scene*);
+	void LoadScene(State*);
+	Scene* GetCurrentScene() { return currentScene; }
+	//Scene* GetCurrentScene() const
+	//{
+	//	std::map<Scene*, int>::iterator iter = scene_Array.find(Scene* scene);
+	//}
 	void PlayScene();
 };
 

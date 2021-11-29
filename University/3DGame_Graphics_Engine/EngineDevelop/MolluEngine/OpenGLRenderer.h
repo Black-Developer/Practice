@@ -8,7 +8,8 @@
 
 class GLRenderer : public IRenderer
 {
-    void Init(int argc, char** argv) override;
+//    void Init(int, char**) override;
+    void Init(int, char** argv, int, int) override;
     void InitCamera() override;
     void Loop() override;
     void Terminate() override;

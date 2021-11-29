@@ -17,9 +17,9 @@ public:
 	std::string name;
 	void LoadScene();
 protected:
-	virtual void Enter() {}
-	virtual void Execute();
-	virtual void Exit() {}
+	void Enter();
+	void Execute();
+	void Exit() {}
 private:
 };
 

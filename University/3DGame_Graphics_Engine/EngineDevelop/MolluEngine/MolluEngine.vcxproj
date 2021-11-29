@@ -27,7 +27,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -93,6 +93,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\dlcod\OneDrive\바탕 화면\GitHub\Practice\University\3DGame_Graphics_Engine\EngineDevelop\MolluEngine\external_Library\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>C:\Users\dlcod\OneDrive\바탕 화면\GitHub\Practice\University\3DGame_Graphics_Engine\EngineDevelop\MolluEngine\external_Library\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -144,22 +145,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BoxRenderer.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="DXRenderer.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="MolluEngineManager.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneMonoBehaviour.cpp" />
-    <ClCompile Include="StateMachine.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BoxRenderer.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="DXRenderer.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="IRenderer.h" />
     <ClInclude Include="MolluEngine.h" />
     <ClInclude Include="MolluEngineManager.h" />
+    <ClInclude Include="MonoBehaviour.h" />
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
@@ -167,6 +174,11 @@
     <ClInclude Include="State.h" />
     <ClInclude Include="StateMachine.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

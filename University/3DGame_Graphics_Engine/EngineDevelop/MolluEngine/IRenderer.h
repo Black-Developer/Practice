@@ -4,7 +4,8 @@
 __interface IRenderer
 {
 public:
-	virtual void Init(int argc, char** argv) = 0;
+//	virtual void Init(int argc, char** argv) = 0;
+	virtual void Init(int argc, char**, int, int) = 0;
 	virtual void InitCamera() = 0;
 	virtual void Loop() = 0;
 	virtual void Terminate() = 0;

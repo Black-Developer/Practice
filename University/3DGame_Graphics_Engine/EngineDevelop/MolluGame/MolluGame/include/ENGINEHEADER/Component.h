@@ -7,7 +7,7 @@ public:
 	Component() {}
 	virtual ~Component() = 0 {}
 	virtual void Start() {}
-	virtual void Update(){}
+	virtual void Update();
 	virtual void Render(){}
 };
 

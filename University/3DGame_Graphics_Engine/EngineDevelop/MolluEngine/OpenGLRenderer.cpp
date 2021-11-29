@@ -1,7 +1,7 @@
 #include "OpenGLRenderer.h"
 #include "SceneManager.h"
 
-void MyDisplay()
+void Rendering()
 {
     glClear(GL_COLOR_BUFFER_BIT);
     glFrontFace(GL_CCW);
@@ -12,18 +12,17 @@ void MyDisplay()
     glEnableClientState(GL_VERTEX_ARRAY);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    glRotatef(30.0, 1.0, 1.0, 1.0);
-    glFlush();
+    //glFlush();
 }
 
-void GLRenderer::Init(int argc, char** argv)
+void GLRenderer::Init(int argc, char** argv, int windowWidth,int windowHeight)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB);
-    glutInitWindowSize(500, 500);
-    glutInitWindowPosition(100, 100);
-    glutCreateWindow("OpenGL Drawing Example");
-    glClearColor(1.0, 1.0, 1.0, 1.0);
+    glutInitWindowSize(windowWidth, windowHeight);
+    glutInitWindowPosition((glutGet(GLUT_SCREEN_WIDTH) - windowWidth) / 2, (glutGet(GLUT_SCREEN_HEIGHT) - windowHeight) / 2);
+    glutCreateWindow("Mollu Engine With OpenGL");
+    glClearColor(0.0, 0.0, 0.0, 1.0);
 }
 
 void GLRenderer::InitCamera()
@@ -34,13 +33,8 @@ void GLRenderer::InitCamera()
 }
 void GLRenderer::Loop()
 {
-    while (true)
-    {
-        SceneManager::getInstance().PlayScene();
-        glutDisplayFunc(MyDisplay);
-        glutMainLoopEvent();
-
-    }
+        glutDisplayFunc(Rendering);
+        glutMainLoop();
 }
 
 

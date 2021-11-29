@@ -2,6 +2,7 @@
 #define __GAMEOBJECT_H__
 
 #include <vector>
+#include "Transform.h"
 
 class Component;
 
@@ -16,7 +17,8 @@ public:
 	virtual void LateUpdate() {}
 	virtual void OnInput() {}
 	virtual void Render();
-
+	Transform transform;
+	
 private:
 	std::vector<Component>* components;
 	std::vector<GameObject> child_GameObject;
