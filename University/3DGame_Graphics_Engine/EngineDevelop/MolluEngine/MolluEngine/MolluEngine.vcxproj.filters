@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일\Scene">
+      <UniqueIdentifier>{d5407661-110d-4dd5-92c6-37597f8357f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\MolluSystem">
+      <UniqueIdentifier>{1cb50539-e1be-4a8c-8385-46efecfe2e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene">
+      <UniqueIdentifier>{96f5fd1d-6f1b-474a-824e-c0379e23c19a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Render">
+      <UniqueIdentifier>{18df25cd-a3f8-4674-9f17-e1c613468a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Render">
+      <UniqueIdentifier>{cece78ba-9db4-489d-9f81-e03219a525ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Components">
+      <UniqueIdentifier>{dad4aa0d-6e68-4289-b034-9f58deddd6e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Components\Collision">
+      <UniqueIdentifier>{2ab42b14-77bb-424b-9742-9ef0acb2b415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Components">
+      <UniqueIdentifier>{3751c1ff-3735-4480-bded-d1c7ed29cee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Components\Collision">
+      <UniqueIdentifier>{7190716e-6389-4664-b7e0-bfd36413a077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GameObject">
+      <UniqueIdentifier>{08b9d765-bb65-4271-b443-530b044717da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Render\RenderTools">
+      <UniqueIdentifier>{db539670-6439-4b45-a306-85f25285c98a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Render\RederTools">
+      <UniqueIdentifier>{815c1ca6-1ddc-426f-a999-0b2b2aa38175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\GameObject">
+      <UniqueIdentifier>{86f4ef2a-98ef-4bab-85c6-e775b8f7703d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MolluSystem">
+      <UniqueIdentifier>{70ecd36d-b0be-4988-ac2f-ed7e4a5e07ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Components\Transform">
+      <UniqueIdentifier>{27e8e3a0-fee3-46b1-a7de-157310303822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Components\Transform">
+      <UniqueIdentifier>{6a4dd2f1-a538-462b-957d-ee03b227ae9d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxRender.cpp">
+      <Filter>소스 파일\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>소스 파일\Components\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>소스 파일\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="DXRenderer.cpp">
+      <Filter>소스 파일\Render\RederTools</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>소스 파일\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>소스 파일\MolluSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MolluEngineManager.cpp">
+      <Filter>소스 파일\MolluSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLRenderer.cpp">
+      <Filter>소스 파일\Render\RederTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>소스 파일\MolluSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>소스 파일\Components\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMonoBehavior.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>소스 파일\Render</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene.h">
+      <Filter>헤더 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMonoBehavior.h">
+      <Filter>헤더 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>헤더 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxRender.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>헤더 파일\Components\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>헤더 파일\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="DXRenderer.h">
+      <Filter>헤더 파일\Render\RenderTools</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>헤더 파일\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene.h">
+      <Filter>헤더 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderer.h">
+      <Filter>헤더 파일\Render\RenderTools</Filter>
+    </ClInclude>
+    <ClInclude Include="MolluEngine.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MolluEngineManager.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MonoBehavior.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLRenderer.h">
+      <Filter>헤더 파일\Render\RenderTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>헤더 파일\MolluSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>헤더 파일\Components\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderComponent.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

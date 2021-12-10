@@ -1,35 +1,40 @@
 #include <iostream>
-#include "MolluEngine.h"
-#include "MolluEngineManager.h"
-#include "ENGINEHEADER/OpenGLRenderer.h"
+#include "../../MolluEngine/MolluEngine/MolluEngine.h"
+#include "../../MolluEngine/MolluEngine/MolluEngineManager.h"
 
+#include "../../MolluEngine//MolluEngine/BoxRender.h"
 
 using namespace std;
 
 
+
 int main(int argc, char** argv)
 {
-	cout << "Mol?lu" << endl;
+	IRenderer* renderer =  MolluEngineManager::getInstance().SetRenderer(ERenderer::E_DIRECTX);
 
-	IRenderer* Renderer = new GLRenderer();
 
-	MolluEngineManager::getInstance().Init(Renderer, argc, argv);
-	MolluEngineManager::getInstance().InitCamera(Renderer);
+	MolluEngineManager::getInstance().Init(renderer, argc, argv, 500, 500);
+	MolluEngineManager::getInstance().InitCamera(renderer);
 
 	GameObject* player = new GameObject();
 
 
-	Scene* newScene = new Scene("newScene",0);
-	
+	Scene* newScene = new Scene("newScene", 0);
 
 	newScene->AddGameObject(player);
+
 	SceneManager::getInstance().InitScene(newScene);
-	SceneManager::getInstance().SetScene(newScene);
+	SceneManager::getInstance().LoadScene(newScene);
+	// Code Make
 
-	newScene->LoadScene();
-	newScene->LoadScene();
 
-	MolluEngineManager::getInstance().Loop(Renderer);
+	player->transform->SetPosition(Vector3(0, 0, 0));
+	player->transform->SetScale(Vector3(1, 1, 1));
+	BoxRender* boxRender = new BoxRender(player);
+
+	player->AddComponent(boxRender);
+
+	MolluEngineManager::getInstance().Loop(renderer);
 
 	return 0;
 }

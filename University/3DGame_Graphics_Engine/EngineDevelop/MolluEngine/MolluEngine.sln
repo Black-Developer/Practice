@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MolluEngine", "MolluEngine.vcxproj", "{C99A482F-02ED-4C50-BDC9-F66E45962CAF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MolluEngine", "MolluEngine\MolluEngine.vcxproj", "{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MolluGame", "..\MolluGame\MolluGame\MolluGame.vcxproj", "{BF3201D8-43E4-410B-929A-1EE6B821E5BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +15,27 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Debug|x64.ActiveCfg = Debug|x64
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Debug|x64.Build.0 = Debug|x64
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Debug|x86.ActiveCfg = Debug|Win32
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Debug|x86.Build.0 = Debug|Win32
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Release|x64.ActiveCfg = Release|x64
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Release|x64.Build.0 = Release|x64
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Release|x86.ActiveCfg = Release|Win32
-		{C99A482F-02ED-4C50-BDC9-F66E45962CAF}.Release|x86.Build.0 = Release|Win32
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Debug|x64.ActiveCfg = Debug|x64
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Debug|x64.Build.0 = Debug|x64
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Debug|x86.ActiveCfg = Debug|Win32
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Debug|x86.Build.0 = Debug|Win32
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Release|x64.ActiveCfg = Release|x64
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Release|x64.Build.0 = Release|x64
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Release|x86.ActiveCfg = Release|Win32
+		{0AA9B133-9B8A-42B5-A025-4C67D6B36BE2}.Release|x86.Build.0 = Release|Win32
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Debug|x64.ActiveCfg = Debug|x64
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Debug|x64.Build.0 = Debug|x64
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Debug|x86.ActiveCfg = Debug|Win32
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Debug|x86.Build.0 = Debug|Win32
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Release|x64.ActiveCfg = Release|x64
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Release|x64.Build.0 = Release|x64
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Release|x86.ActiveCfg = Release|Win32
+		{BF3201D8-43E4-410B-929A-1EE6B821E5BC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {310BEE33-08C6-47CB-A32E-1FF54DBE38C9}
+		SolutionGuid = {47CC0310-E3F0-493A-9838-B81AB71E3F46}
 	EndGlobalSection
 EndGlobal
