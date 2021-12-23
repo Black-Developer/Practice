@@ -1,5 +1,6 @@
 #include "Time.h"
 
+
 bool Time::IsFixedFrame()
 {
 	QueryPerformanceFrequency(&frequency);

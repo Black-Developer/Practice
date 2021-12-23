@@ -11,14 +11,14 @@ void MolluEngineManager::Loop(IRenderer* render)
 	}
 }
 
-void MolluEngineManager::Init(IRenderer* render, int argc, char** argv, int windowWidth, int windowHeight)
+void MolluEngineManager::Init(IRenderer* renderer, int argc, char** argv, int windowWidth, int windowHeight)
 {
-	render->Init(argc, argv, windowWidth, windowHeight);
+	renderer->Init(argc, argv, windowWidth, windowHeight);
 }
 
-void MolluEngineManager::InitCamera(IRenderer* render)
+void MolluEngineManager::InitCamera(IRenderer* renderer)
 {
-	render->InitCamera();
+	renderer->InitCamera();
 }
 
 IRenderer* MolluEngineManager::SetRenderer(ERenderer ERENDERER)

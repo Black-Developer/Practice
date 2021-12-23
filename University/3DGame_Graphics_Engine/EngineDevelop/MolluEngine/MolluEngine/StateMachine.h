@@ -16,9 +16,18 @@ public:
 	entity_type* GetGlobalState() const { return m_pGlobalState; }
 	entity_type* GetPreviousState() const { return m_pPreviousState; }
 
-	void SetCurrentState(entity_type* state) { m_pCurrentState = state; }
-	void SetGlobalState(entity_type* state) { m_pGlobalState = state; }
-	void SetPreviousState(entity_type* state) { m_pPreviousState = state; }
+	void SetCurrentState(entity_type* state)
+	{
+		m_pCurrentState = state;
+	}
+	void SetGlobalState(entity_type* state)
+	{
+		m_pGlobalState = state;
+	}
+	void SetPreviousState(entity_type* state)
+	{
+		m_pPreviousState = state;
+	}
 	StateMachine() :
 		m_pCurrentState(nullptr),
 		m_pPreviousState(nullptr),
@@ -35,7 +44,6 @@ public:
 	void ChangeState(entity_type* pNewState)
 	{
 		m_pPreviousState = m_pCurrentState;
-
 		m_pCurrentState->Exit();
 		m_pCurrentState = pNewState;
 		m_pCurrentState->Enter();

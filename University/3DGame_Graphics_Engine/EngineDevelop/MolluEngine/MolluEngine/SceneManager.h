@@ -1,7 +1,6 @@
 #ifndef __SCENEMANAGER_H__
 #define __SCENEMANAGER_H__
 
-#include <string>
 #include <map>
 #include "StateMachine.h"
 
@@ -36,10 +35,6 @@ public:
 	void LoadScene(Scene*);
 	void LoadScene(State*);
 	Scene* GetCurrentScene() { return currentScene; }
-	//Scene* GetCurrentScene() const
-	//{
-	//	std::map<Scene*, int>::iterator iter = scene_Array.find(Scene* scene);
-	//}
 	void PlayScene();
 };
 

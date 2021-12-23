@@ -31,14 +31,8 @@
     <Filter Include="소스 파일\Components">
       <UniqueIdentifier>{dad4aa0d-6e68-4289-b034-9f58deddd6e9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Components\Collision">
-      <UniqueIdentifier>{2ab42b14-77bb-424b-9742-9ef0acb2b415}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\Components">
       <UniqueIdentifier>{3751c1ff-3735-4480-bded-d1c7ed29cee8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Components\Collision">
-      <UniqueIdentifier>{7190716e-6389-4664-b7e0-bfd36413a077}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\GameObject">
       <UniqueIdentifier>{08b9d765-bb65-4271-b443-530b044717da}</UniqueIdentifier>
@@ -72,20 +66,11 @@
     <ClCompile Include="BoxRender.cpp">
       <Filter>소스 파일\Render</Filter>
     </ClCompile>
-    <ClCompile Include="Collision.cpp">
-      <Filter>소스 파일\Components\Collision</Filter>
-    </ClCompile>
-    <ClCompile Include="Cube.cpp">
-      <Filter>소스 파일\GameObject</Filter>
-    </ClCompile>
     <ClCompile Include="DXRenderer.cpp">
       <Filter>소스 파일\Render\RederTools</Filter>
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
       <Filter>소스 파일\GameObject</Filter>
-    </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>소스 파일\MolluSystem</Filter>
     </ClCompile>
     <ClCompile Include="IntroScene.cpp">
       <Filter>소스 파일\Scene</Filter>
@@ -105,7 +90,19 @@
     <ClCompile Include="SceneMonoBehavior.cpp">
       <Filter>소스 파일\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Render.cpp">
+    <ClCompile Include="OpenGLOBJLoader.cpp">
+      <Filter>소스 파일\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>소스 파일\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="DXOBJLoader.cpp">
+      <Filter>소스 파일\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureRender.cpp">
+      <Filter>소스 파일\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GLTextureComponent.cpp">
       <Filter>소스 파일\Render</Filter>
     </ClCompile>
   </ItemGroup>
@@ -128,9 +125,6 @@
     <ClInclude Include="BoxRender.h">
       <Filter>헤더 파일\Render</Filter>
     </ClInclude>
-    <ClInclude Include="Collision.h">
-      <Filter>헤더 파일\Components\Collision</Filter>
-    </ClInclude>
     <ClInclude Include="Component.h">
       <Filter>헤더 파일\Components</Filter>
     </ClInclude>
@@ -142,9 +136,6 @@
     </ClInclude>
     <ClInclude Include="InputManager.h">
       <Filter>헤더 파일\MolluSystem</Filter>
-    </ClInclude>
-    <ClInclude Include="IntroScene.h">
-      <Filter>헤더 파일\Scene</Filter>
     </ClInclude>
     <ClInclude Include="IRenderer.h">
       <Filter>헤더 파일\Render\RenderTools</Filter>
@@ -171,6 +162,27 @@
       <Filter>헤더 파일\Components\Transform</Filter>
     </ClInclude>
     <ClInclude Include="RenderComponent.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLOBJLoader.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJLoader.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="DXOBJLoader.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>헤더 파일\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureComponent.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="GLTextureComponent.h">
+      <Filter>헤더 파일\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureRender.h">
       <Filter>헤더 파일\Render</Filter>
     </ClInclude>
   </ItemGroup>

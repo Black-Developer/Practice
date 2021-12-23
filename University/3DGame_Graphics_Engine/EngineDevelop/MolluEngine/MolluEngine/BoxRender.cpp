@@ -2,6 +2,7 @@
 #include "DXRenderer.h"
 #include "OpenGLRenderer.h"
 
+
 void BoxRender::Render()
 {
 	renderer->StartRender();

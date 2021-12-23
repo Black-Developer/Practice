@@ -3,7 +3,7 @@
 #include "Time.h"
 #include "SceneManager.h"
 
-Scene::Scene(string _name, int _index)
+Scene::Scene(std::string _name, int _index)
 {
 	name = _name;
 	index = _index;
@@ -15,7 +15,7 @@ void Scene::AddGameObject(GameObject* gameObject)
 	gameObjects.push_back(gameObject);
 }
 
-string Scene::GetName()
+std::string Scene::GetName()
 {
 	return name;
 }

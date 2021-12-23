@@ -40,7 +40,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -88,12 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\dlcod\OneDrive\바탕 화면\GitHub\Practice\University\3DGame_Graphics_Engine\EngineDevelop\MolluEngine\External_Library\GL\freeglut-MSVC-3.0.0-2.mp\freeglut\include\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\External_Library\GL\freeglut-MSVC-3.0.0-2.mp\freeglut\include\GL;..\External_Library\glm\ext;C:\Users\dlcod\OneDrive\바탕 화면\GitHub\Practice\University\3DGame_Graphics_Engine\EngineDevelop\MolluEngine\External_Library\glaux;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\dlcod\OneDrive\바탕 화면\GitHub\Practice\University\3DGame_Graphics_Engine\EngineDevelop\MolluEngine\External_Library\GL\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\External_Library\GL\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;..\External_Library\glaux;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -118,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\External_Library\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,33 +143,37 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BoxRender.cpp" />
-    <ClCompile Include="Collision.cpp" />
-    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="DXOBJLoader.cpp" />
     <ClCompile Include="DXRenderer.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="GLTextureComponent.cpp" />
     <ClCompile Include="IntroScene.cpp" />
+    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="MolluEngineManager.cpp" />
+    <ClCompile Include="OpenGLOBJLoader.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
-    <ClCompile Include="Render.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneMonoBehavior.cpp" />
+    <ClCompile Include="TextureRender.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BoxRender.h" />
-    <ClInclude Include="Collision.h" />
     <ClInclude Include="Component.h" />
+    <ClInclude Include="DXOBJLoader.h" />
     <ClInclude Include="DXRenderer.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GLTextureComponent.h" />
     <ClInclude Include="InputManager.h" />
-    <ClInclude Include="IntroScene.h" />
     <ClInclude Include="IRenderer.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="MolluEngine.h" />
     <ClInclude Include="MolluEngineManager.h" />
     <ClInclude Include="MonoBehavior.h" />
+    <ClInclude Include="OBJLoader.h" />
+    <ClInclude Include="OpenGLOBJLoader.h" />
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="RenderComponent.h" />
     <ClInclude Include="Scene.h" />
@@ -176,6 +181,8 @@
     <ClInclude Include="SceneMonoBehavior.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="TextureComponent.h" />
+    <ClInclude Include="TextureRender.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Vector.h" />

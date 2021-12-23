@@ -12,6 +12,10 @@ public:
 	virtual void Vertex2f(float, float) = 0;
 	virtual void StartRender() = 0;
 	virtual void EndRender() = 0;
+	virtual int StartTextureRender(const char*, char**) = 0;
+	virtual void EndTextureRender() = 0;
+	virtual void LoadTexture() = 0;
+
 };
 
 #endif // !__IRENDERER_H__

@@ -10,9 +10,6 @@ void SceneMonoBehavior::LoadScene()
 
 void SceneMonoBehavior::Enter()
 {
-
-	//Maybe i need Awake()
-
 	for (unsigned int i = 0; i < gameObjects.size(); i++)
 	{
 		gameObjects.at(i)->Start();

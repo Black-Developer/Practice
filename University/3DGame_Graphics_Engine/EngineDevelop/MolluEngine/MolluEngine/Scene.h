@@ -3,23 +3,21 @@
 
 #include <vector>
 #include <string>
-
 #include "SceneMonoBehavior.h"
 
 class GameObject;
 
-using namespace std;
 
 class Scene : public SceneMonoBehavior
 {
 private:
 	Scene() {}
 public:
-	Scene(string _name, int _index);
+	Scene(std::string _name, int _index);
 	virtual ~Scene() {};
 	void AddGameObject(GameObject*);
 	int GetIndex();
-	string GetName();
+	std::string GetName();
 };
 
 #endif // !__Scene_H__

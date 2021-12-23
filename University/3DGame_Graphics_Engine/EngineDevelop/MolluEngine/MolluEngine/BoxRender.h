@@ -8,10 +8,16 @@
 class BoxRender : public RenderComponent
 {
 private:
-	BoxRender() { transform = new Transform(); }
+	BoxRender()
+	{
+		transform = new Transform();
+	}
 public:
-	BoxRender(GameObject* pOwner) { transform = pOwner->transform; }
-	~BoxRender() {}
+	BoxRender(GameObject* pOwner)
+	{
+		transform = pOwner->transform;
+	}
+	~BoxRender() { delete transform; }
 	void Render() override;
 	Transform* transform;
 };

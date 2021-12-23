@@ -2,14 +2,6 @@
 #define __MOLLUENGINEMANAGER_H__
 
 #include "MolluEngine.h"
-#include "IRenderer.h"
-
-enum ERenderer
-{
-	isValid = 0,
-	E_OPENGL = 1,
-	E_DIRECTX = 2
-};
 
 class MolluEngineManager
 {

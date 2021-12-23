@@ -5,10 +5,9 @@ void SceneManager::InitScene(State* scene)
 {
 	m_pStateMachine->SetCurrentState(scene);
 }
-
 void  SceneManager::AddScene(Scene* scene)
 {
-	scene_Array.insert({ scene, scene->GetIndex() });
+	scene_Array.insert(std::make_pair(scene, scene->GetIndex()));
 }
 void SceneManager::LoadScene(Scene* scene)
 {
@@ -18,7 +17,6 @@ void SceneManager::LoadScene(State* state)
 {
 	m_pStateMachine->ChangeState(state);
 }
-
 void SceneManager::PlayScene()
 {
 	m_pStateMachine->Update();
